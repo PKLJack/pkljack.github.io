@@ -12,6 +12,15 @@ const heroTyped = new Typed("#heroTyped", {
 });
 
 /* ======================================== */
+/* CV                                       */
+/* ======================================== */
+
+if (new URL(window.location).searchParams.get("debug") === "1") {
+  console.log("In debug mode");
+  document.querySelector(".cv .d-none").classList.remove("d-none");
+}
+
+/* ======================================== */
 /* Portfolio                                */
 /* ======================================== */
 
